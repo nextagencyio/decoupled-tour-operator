@@ -1,0 +1,168 @@
+{
+  "data": {
+    "nodeGuides": {
+      "__typename": "NodeGuideConnection",
+      "nodes": [
+        {
+          "__typename": "NodeGuide",
+          "id": "guide-amani",
+          "title": "Amani Kwame",
+          "path": "/guides/amani-kwame",
+          "body": {
+            "processed": "<p>Born and raised near the Serengeti, Amani has been guiding wildlife safaris for over 15 years. His deep knowledge of animal behavior and ecosystems makes every safari an unforgettable learning experience. Amani is particularly passionate about big cat conservation and has contributed to several research projects with the Serengeti Lion Project.</p><h2>What Guests Say</h2><p>\"Amani spotted animals that no one else could see. His knowledge of the Serengeti is encyclopedic, and his passion for wildlife is contagious.\" - Previous guest</p>",
+            "summary": "Born and raised near the Serengeti, Amani has been guiding wildlife safaris for over 15 years. His deep knowledge of animal behavior and ecosystems makes every safari an unforgettable learning experie"
+          },
+          "specialty": [
+            {
+              "id": "Natural History",
+              "name": "Natural History"
+            }
+          ],
+          "languages": [
+            "English",
+            "Swahili",
+            "French"
+          ],
+          "yearsExperience": "15",
+          "certification": [
+            "TANAPA Certified Guide",
+            "Wilderness First Responder",
+            "Wildlife Conservation Certificate"
+          ],
+          "image": {
+            "url": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=800&q=80",
+            "alt": "Amani Kwame, expert safari guide",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        },
+        {
+          "__typename": "NodeGuide",
+          "id": "guide-maya",
+          "title": "Maya Sherpa",
+          "path": "/guides/maya-sherpa",
+          "body": {
+            "processed": "<p>Maya is one of Nepal's most experienced female mountain guides. She has summited multiple Himalayan peaks and led hundreds of trekking groups through the Annapurna and Everest regions. Maya is a strong advocate for women in mountaineering and mentors young female guides through a program she founded in Pokhara.</p><h2>What Guests Say</h2><p>\"Maya's leadership on the Annapurna Circuit was outstanding. She kept the group motivated, safe, and laughing even at 5,000 meters.\" - Previous guest</p>",
+            "summary": "Maya is one of Nepal's most experienced female mountain guides. She has summited multiple Himalayan peaks and led hundreds of trekking groups through the Annapurna and Everest regions. Maya is a stron"
+          },
+          "specialty": [
+            {
+              "id": "Mountaineering",
+              "name": "Mountaineering"
+            }
+          ],
+          "languages": [
+            "English",
+            "Nepali",
+            "Hindi"
+          ],
+          "yearsExperience": "12",
+          "certification": [
+            "Nepal Mountaineering Association Guide",
+            "Advanced Wilderness First Aid",
+            "Leave No Trace Master Educator"
+          ],
+          "image": {
+            "url": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=800&q=80",
+            "alt": "Maya Sherpa, expert mountain guide",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        },
+        {
+          "__typename": "NodeGuide",
+          "id": "guide-carlos",
+          "title": "Carlos Mendez",
+          "path": "/guides/carlos-mendez",
+          "body": {
+            "processed": "<p>Carlos is a marine biologist turned tour guide who leads our Costa Rica and Central America adventures. His scientific background gives guests unique insights into tropical ecosystems, from cloud forests to coral reefs. When not guiding, Carlos works with local conservation groups to protect sea turtle nesting sites.</p><h2>What Guests Say</h2><p>\"Carlos's knowledge of tropical ecology is incredible. He turned every hike into a fascinating nature lesson that made us see the rainforest in a completely new way.\" - Previous guest</p>",
+            "summary": "Carlos is a marine biologist turned tour guide who leads our Costa Rica and Central America adventures. His scientific background gives guests unique insights into tropical ecosystems, from cloud fore"
+          },
+          "specialty": [
+            {
+              "id": "Marine Biology",
+              "name": "Marine Biology"
+            }
+          ],
+          "languages": [
+            "English",
+            "Spanish",
+            "Portuguese"
+          ],
+          "yearsExperience": "10",
+          "certification": [
+            "Marine Biology MSc",
+            "PADI Divemaster",
+            "Certified Naturalist Guide"
+          ],
+          "image": {
+            "url": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=800&q=80",
+            "alt": "Carlos Mendez, expert naturalist guide",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

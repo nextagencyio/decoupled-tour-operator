@@ -1,0 +1,141 @@
+{
+  "data": {
+    "nodeDestinations": {
+      "__typename": "NodeDestinationConnection",
+      "nodes": [
+        {
+          "__typename": "NodeDestination",
+          "id": "destination-tanzania",
+          "title": "Tanzania",
+          "path": "/destinations/tanzania",
+          "body": {
+            "processed": "<p>Tanzania is one of the world's premier safari destinations, home to the Serengeti, Ngorongoro Crater, Mount Kilimanjaro, and the spice island of Zanzibar. The country's commitment to conservation means over 30% of its land is protected, making it a haven for wildlife.</p><h2>Why Visit Tanzania</h2><ul><li>Witness the Great Wildebeest Migration</li><li>See the Big Five in their natural habitat</li><li>Climb Africa's highest peak, Mount Kilimanjaro</li><li>Relax on the pristine beaches of Zanzibar</li><li>Experience Maasai culture and traditions</li></ul>",
+            "summary": "Tanzania is one of the world's premier safari destinations, home to the Serengeti, Ngorongoro Crater, Mount Kilimanjaro, and the spice island of Zanzibar. The country's commitment to conservation mean"
+          },
+          "region": [
+            {
+              "id": "East Africa",
+              "name": "East Africa"
+            }
+          ],
+          "country": "Tanzania",
+          "bestSeason": "June to October (dry season) for safaris",
+          "image": {
+            "url": "https://images.unsplash.com/photo-1516426122078-c23e76319801?w=800&q=80",
+            "alt": "Elephants on the African savanna with Kilimanjaro in the background",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1516426122078-c23e76319801?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1516426122078-c23e76319801?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1516426122078-c23e76319801?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        },
+        {
+          "__typename": "NodeDestination",
+          "id": "destination-nepal",
+          "title": "Nepal",
+          "path": "/destinations/nepal",
+          "body": {
+            "processed": "<p>Nepal is the ultimate destination for trekkers and mountain lovers. Nestled between India and China, this small Himalayan nation is home to eight of the world's fourteen 8,000-meter peaks, including Mount Everest. Beyond the mountains, Nepal offers rich cultural heritage, ancient temples, and some of the warmest hospitality in Asia.</p><h2>Why Visit Nepal</h2><ul><li>Trek legendary routes like the Annapurna Circuit and Everest Base Camp</li><li>Explore UNESCO World Heritage Sites in Kathmandu Valley</li><li>Experience traditional Nepali and Tibetan culture</li><li>Spot rare wildlife in Chitwan National Park</li></ul>",
+            "summary": "Nepal is the ultimate destination for trekkers and mountain lovers. Nestled between India and China, this small Himalayan nation is home to eight of the world's fourteen 8,000-meter peaks, including M"
+          },
+          "region": [
+            {
+              "id": "Himalayas",
+              "name": "Himalayas"
+            }
+          ],
+          "country": "Nepal",
+          "bestSeason": "October to November, March to May",
+          "image": {
+            "url": "https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=800&q=80",
+            "alt": "Himalayan mountain peaks above the clouds",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        },
+        {
+          "__typename": "NodeDestination",
+          "id": "destination-costa-rica",
+          "title": "Costa Rica",
+          "path": "/destinations/costa-rica",
+          "body": {
+            "processed": "<p>Costa Rica packs an incredible amount of biodiversity into a small area. With over 5% of the world's species found within its borders, it is a nature lover's paradise. The country is also a global leader in ecotourism and renewable energy, making it an ideal destination for responsible travelers.</p><h2>Why Visit Costa Rica</h2><ul><li>Explore diverse ecosystems from cloud forests to coral reefs</li><li>Spot monkeys, sloths, toucans, and sea turtles</li><li>Adventure activities including zip-lining, rafting, and surfing</li><li>Relaxing volcanic hot springs</li><li>Sustainable tourism practices throughout the country</li></ul>",
+            "summary": "Costa Rica packs an incredible amount of biodiversity into a small area. With over 5% of the world's species found within its borders, it is a nature lover's paradise. The country is also a global lea"
+          },
+          "region": [
+            {
+              "id": "Central America",
+              "name": "Central America"
+            }
+          ],
+          "country": "Costa Rica",
+          "bestSeason": "December to April (dry season)",
+          "image": {
+            "url": "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=800&q=80",
+            "alt": "Lush tropical rainforest and waterfall in Costa Rica",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

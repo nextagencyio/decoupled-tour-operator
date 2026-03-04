@@ -1,0 +1,59 @@
+{
+  "data": {
+    "nodeHomepages": {
+      "__typename": "NodeHomepageConnection",
+      "nodes": [
+        {
+          "__typename": "NodeHomepage",
+          "id": "homepage",
+          "title": "Trailmark Tours",
+          "path": "/homepage",
+          "heroTitle": "Adventures Led by Experts",
+          "heroSubtitle": "Small-Group Tours, Big Experiences",
+          "heroDescription": {
+            "processed": "<p>Join our passionate local guides for immersive small-group adventures across 32 countries. From East African safaris to Patagonian treks, every journey is crafted for authentic exploration.</p>",
+            "summary": "Join our passionate local guides for immersive small-group adventures across 32 countries. From East African safaris to Patagonian treks, every journey is crafted for authentic exploration."
+          },
+          "statsItems": [
+            {
+              "__typename": "ParagraphStatItem",
+              "id": "stat-tours",
+              "title": "",
+              "number": "85+",
+              "label": "Unique Tours"
+            },
+            {
+              "__typename": "ParagraphStatItem",
+              "id": "stat-countries",
+              "title": "",
+              "number": "32",
+              "label": "Countries"
+            },
+            {
+              "__typename": "ParagraphStatItem",
+              "id": "stat-guests",
+              "title": "",
+              "number": "12,000+",
+              "label": "Happy Guests"
+            },
+            {
+              "__typename": "ParagraphStatItem",
+              "id": "stat-guides",
+              "title": "",
+              "number": "40+",
+              "label": "Expert Guides"
+            }
+          ],
+          "featuredItemsTitle": "Featured Tours",
+          "ctaTitle": "Find Your Next Adventure",
+          "ctaDescription": {
+            "processed": "<p>Our expert guides are ready to lead you on the adventure of a lifetime. Small groups, big experiences, and responsible travel at the heart of everything we do.</p>",
+            "summary": "Our expert guides are ready to lead you on the adventure of a lifetime. Small groups, big experiences, and responsible travel at the heart of everything we do."
+          },
+          "ctaPrimary": "Browse All Tours",
+          "ctaSecondary": "Meet Our Guides"
+        }
+      ]
+    }
+  }
+}

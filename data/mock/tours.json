@@ -1,0 +1,221 @@
+{
+  "data": {
+    "nodeTours": {
+      "__typename": "NodeTourConnection",
+      "nodes": [
+        {
+          "__typename": "NodeTour",
+          "id": "tour-serengeti",
+          "title": "Serengeti Wildlife Safari",
+          "path": "/tours/serengeti-safari",
+          "body": {
+            "processed": "<p>Witness the greatest wildlife spectacle on Earth during this 7-day safari through Tanzania's Serengeti National Park and Ngorongoro Crater. Expert naturalist guides ensure you see the Big Five and learn about the complex ecosystems that support this incredible biodiversity.</p><h2>Day-by-Day Itinerary</h2><ul><li>Day 1: Arrive in Arusha, welcome dinner</li><li>Day 2: Drive to Tarangire National Park, afternoon game drive</li><li>Day 3-4: Serengeti National Park, full-day game drives</li><li>Day 5: Serengeti to Ngorongoro Conservation Area</li><li>Day 6: Ngorongoro Crater floor exploration</li><li>Day 7: Departure from Arusha</li></ul>",
+            "summary": "Witness the greatest wildlife spectacle on Earth during this 7-day safari through Tanzania's Serengeti National Park and Ngorongoro Crater. Expert naturalist guides ensure you see the Big Five and lea"
+          },
+          "tourType": [
+            {
+              "id": "Wildlife Safari",
+              "name": "Wildlife Safari"
+            }
+          ],
+          "duration": "7 Days",
+          "price": "$4,500",
+          "groupSize": "Max 8 guests",
+          "difficulty": "Easy",
+          "highlights": [
+            "Big Five game viewing",
+            "Ngorongoro Crater descent",
+            "Luxury tented camps",
+            "Expert naturalist guide"
+          ],
+          "image": {
+            "url": "https://images.unsplash.com/photo-1516426122078-c23e76319801?w=800&q=80",
+            "alt": "Elephants walking across the Serengeti plains at sunset",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1516426122078-c23e76319801?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1516426122078-c23e76319801?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1516426122078-c23e76319801?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          },
+          "featured": true
+        },
+        {
+          "__typename": "NodeTour",
+          "id": "tour-nepal-trek",
+          "title": "Annapurna Circuit Trek",
+          "path": "/tours/nepal-annapurna-circuit",
+          "body": {
+            "processed": "<p>Trek one of the world's most iconic mountain circuits through diverse landscapes from subtropical forests to high-altitude desert. Cross the Thorong La Pass at 5,416 meters and experience the warmth of Nepali mountain hospitality at teahouses along the way.</p><h2>Trek Highlights</h2><ul><li>Days 1-4: Ascend through lush rhododendron forests and terraced rice paddies</li><li>Days 5-8: High-altitude villages and Tibetan Buddhist monasteries</li><li>Day 9: Cross Thorong La Pass (5,416m)</li><li>Days 10-12: Descend through Muktinath and Jomsom to Pokhara</li></ul>",
+            "summary": "Trek one of the world's most iconic mountain circuits through diverse landscapes from subtropical forests to high-altitude desert. Cross the Thorong La Pass at 5,416 meters and experience the warmth o"
+          },
+          "tourType": [
+            {
+              "id": "Hiking",
+              "name": "Hiking"
+            }
+          ],
+          "duration": "14 Days",
+          "price": "$2,200",
+          "groupSize": "Max 12 guests",
+          "difficulty": "Challenging",
+          "highlights": [
+            "Thorong La Pass crossing",
+            "Himalayan panoramas",
+            "Teahouse stays",
+            "Tibetan monasteries"
+          ],
+          "image": {
+            "url": "https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=800&q=80",
+            "alt": "Hikers on a mountain trail with Himalayan peaks in the background",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          },
+          "featured": true
+        },
+        {
+          "__typename": "NodeTour",
+          "id": "tour-costa-rica",
+          "title": "Costa Rica Rainforest Adventure",
+          "path": "/tours/costa-rica-rainforest-adventure",
+          "body": {
+            "processed": "<p>Explore the incredible biodiversity of Costa Rica on this action-packed 9-day adventure. From cloud forests to volcanic hot springs, and from howler monkeys to quetzals, this tour showcases the best of Central America's ecological wonderland.</p><h2>Itinerary</h2><ul><li>Days 1-2: San Jose to Arenal Volcano, hot springs and hanging bridges</li><li>Days 3-4: Monteverde Cloud Forest, canopy zip-line tour</li><li>Days 5-6: Manuel Antonio National Park, snorkeling and beach</li><li>Days 7-8: Tortuguero canals by boat, sea turtle nesting</li><li>Day 9: Return to San Jose and departure</li></ul>",
+            "summary": "Explore the incredible biodiversity of Costa Rica on this action-packed 9-day adventure. From cloud forests to volcanic hot springs, and from howler monkeys to quetzals, this tour showcases the best o"
+          },
+          "tourType": [
+            {
+              "id": "Wildlife Safari",
+              "name": "Wildlife Safari"
+            }
+          ],
+          "duration": "9 Days",
+          "price": "$2,800",
+          "groupSize": "Max 10 guests",
+          "difficulty": "Moderate",
+          "highlights": [
+            "Cloud forest zip-lining",
+            "Volcanic hot springs",
+            "Sea turtle nesting",
+            "Incredible biodiversity"
+          ],
+          "image": {
+            "url": "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=800&q=80",
+            "alt": "Lush green rainforest canopy in Costa Rica",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          },
+          "featured": true
+        },
+        {
+          "__typename": "NodeTour",
+          "id": "tour-iceland-photography",
+          "title": "Iceland Northern Lights Photography Tour",
+          "path": "/tours/iceland-northern-lights-photography",
+          "body": {
+            "processed": "<p>Chase the aurora borealis across Iceland's dramatic landscapes on this 6-day photography-focused tour. Our expert photography guide will help you capture stunning images of the Northern Lights, glaciers, waterfalls, and volcanic terrain.</p><h2>Tour Highlights</h2><ul><li>Day 1: Reykjavik orientation, camera setup workshop</li><li>Day 2: Golden Circle - Thingvellir, Geysir, Gullfoss</li><li>Day 3: South Coast waterfalls and black sand beaches</li><li>Day 4: Jokulsarlon Glacier Lagoon and Diamond Beach</li><li>Day 5: Snaefellsnes Peninsula landscapes</li><li>Day 6: Final Northern Lights chase and departure</li></ul>",
+            "summary": "Chase the aurora borealis across Iceland's dramatic landscapes on this 6-day photography-focused tour. Our expert photography guide will help you capture stunning images of the Northern Lights, glacie"
+          },
+          "tourType": [
+            {
+              "id": "Photography",
+              "name": "Photography"
+            }
+          ],
+          "duration": "6 Days",
+          "price": "$3,100",
+          "groupSize": "Max 8 guests",
+          "difficulty": "Easy",
+          "highlights": [
+            "Northern Lights photography",
+            "Glacier lagoon",
+            "Expert photo guide",
+            "Black sand beaches"
+          ],
+          "image": {
+            "url": "https://images.unsplash.com/photo-1531366936337-7c912a4589a7?w=800&q=80",
+            "alt": "Northern Lights dancing over an Icelandic landscape",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1531366936337-7c912a4589a7?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1531366936337-7c912a4589a7?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1531366936337-7c912a4589a7?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          },
+          "featured": false
+        }
+      ]
+    }
+  }
+}

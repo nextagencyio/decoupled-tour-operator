@@ -1,0 +1,590 @@
+{
+  "model": [
+    {
+      "bundle": "homepage",
+      "label": "Homepage",
+      "description": "Landing page with hero section, stats, and call-to-action areas for the tour operator",
+      "fields": [
+        {
+          "id": "hero_title",
+          "label": "Hero Title",
+          "type": "string",
+          "description": "Main headline in the hero section"
+        },
+        {
+          "id": "hero_subtitle",
+          "label": "Hero Subtitle",
+          "type": "string",
+          "description": "Secondary text below the hero title"
+        },
+        {
+          "id": "hero_description",
+          "label": "Hero Description",
+          "type": "text",
+          "description": "Longer descriptive text for the hero section"
+        },
+        {
+          "id": "stats_items",
+          "label": "Statistics",
+          "type": "paragraph(stat_item)[]",
+          "description": "Key statistics about the tour operator"
+        },
+        {
+          "id": "featured_items_title",
+          "label": "Featured Items Title",
+          "type": "string",
+          "description": "Title for the featured tours section"
+        },
+        {
+          "id": "cta_title",
+          "label": "CTA Title",
+          "type": "string",
+          "description": "Call-to-action section title"
+        },
+        {
+          "id": "cta_description",
+          "label": "CTA Description",
+          "type": "text",
+          "description": "Call-to-action descriptive text"
+        },
+        {
+          "id": "cta_primary",
+          "label": "Primary CTA",
+          "type": "string",
+          "description": "Primary call-to-action button text"
+        },
+        {
+          "id": "cta_secondary",
+          "label": "Secondary CTA",
+          "type": "string",
+          "description": "Secondary call-to-action button text"
+        }
+      ]
+    },
+    {
+      "bundle": "tour",
+      "label": "Tour",
+      "description": "Guided tour experience with itinerary, pricing, and details",
+      "body": true,
+      "fields": [
+        {
+          "id": "tour_type",
+          "label": "Tour Type",
+          "type": "term(tour_types)[]",
+          "description": "Type of tour experience"
+        },
+        {
+          "id": "duration",
+          "label": "Duration",
+          "type": "string",
+          "description": "Tour duration"
+        },
+        {
+          "id": "price",
+          "label": "Price",
+          "type": "string",
+          "description": "Price per person"
+        },
+        {
+          "id": "group_size",
+          "label": "Group Size",
+          "type": "string",
+          "description": "Maximum group size"
+        },
+        {
+          "id": "difficulty",
+          "label": "Difficulty Level",
+          "type": "string",
+          "description": "Physical difficulty level"
+        },
+        {
+          "id": "highlights",
+          "label": "Tour Highlights",
+          "type": "string[]",
+          "description": "Key highlights of the tour"
+        },
+        {
+          "id": "image",
+          "label": "Tour Image",
+          "type": "image",
+          "description": "Main image for the tour"
+        },
+        {
+          "id": "featured",
+          "label": "Featured",
+          "type": "bool",
+          "description": "Whether this tour is featured"
+        }
+      ]
+    },
+    {
+      "bundle": "guide",
+      "label": "Guide",
+      "description": "Tour guide profile with expertise and biography",
+      "body": true,
+      "fields": [
+        {
+          "id": "specialty",
+          "label": "Specialty",
+          "type": "term(specialties)[]",
+          "description": "Guide's area of expertise"
+        },
+        {
+          "id": "languages",
+          "label": "Languages",
+          "type": "string[]",
+          "description": "Languages spoken"
+        },
+        {
+          "id": "years_experience",
+          "label": "Years of Experience",
+          "type": "string",
+          "description": "Number of years guiding"
+        },
+        {
+          "id": "certification",
+          "label": "Certifications",
+          "type": "string[]",
+          "description": "Professional certifications"
+        },
+        {
+          "id": "image",
+          "label": "Guide Photo",
+          "type": "image",
+          "description": "Profile photo of the guide"
+        }
+      ]
+    },
+    {
+      "bundle": "destination",
+      "label": "Destination",
+      "description": "Operating destination with overview and available tours",
+      "body": true,
+      "fields": [
+        {
+          "id": "region",
+          "label": "Region",
+          "type": "term(regions)[]",
+          "description": "Geographic region"
+        },
+        {
+          "id": "country",
+          "label": "Country",
+          "type": "string",
+          "description": "Country name"
+        },
+        {
+          "id": "best_season",
+          "label": "Best Season",
+          "type": "string",
+          "description": "Best time to visit"
+        },
+        {
+          "id": "image",
+          "label": "Destination Image",
+          "type": "image",
+          "description": "Main image for the destination"
+        }
+      ]
+    },
+    {
+      "bundle": "review",
+      "label": "Review",
+      "description": "Guest review of a tour experience",
+      "body": true,
+      "fields": [
+        {
+          "id": "reviewer_name",
+          "label": "Reviewer Name",
+          "type": "string",
+          "description": "Name of the reviewer"
+        },
+        {
+          "id": "tour_name",
+          "label": "Tour Name",
+          "type": "string",
+          "description": "Name of the tour reviewed"
+        },
+        {
+          "id": "rating",
+          "label": "Rating",
+          "type": "string",
+          "description": "Rating out of 5"
+        },
+        {
+          "id": "travel_date",
+          "label": "Travel Date",
+          "type": "string",
+          "description": "When the tour was taken"
+        },
+        {
+          "id": "image",
+          "label": "Reviewer Photo",
+          "type": "image",
+          "description": "Photo of the reviewer"
+        }
+      ]
+    },
+    {
+      "bundle": "page",
+      "label": "Basic Page",
+      "description": "Static content pages for about, policies, etc.",
+      "body": true,
+      "fields": []
+    },
+    {
+      "entity": "paragraph",
+      "bundle": "stat_item",
+      "label": "Statistic Item",
+      "description": "A single statistic with number and label",
+      "fields": [
+        {
+          "id": "number",
+          "label": "Number",
+          "type": "string!",
+          "description": "The statistic number or value (required)"
+        },
+        {
+          "id": "label",
+          "label": "Label",
+          "type": "string!",
+          "description": "Description label for the statistic (required)"
+        }
+      ]
+    }
+  ],
+  "taxonomies": [
+    {
+      "vocabulary": "tour_types",
+      "label": "Tour Types",
+      "terms": ["Hiking", "Cultural", "Wildlife Safari", "Kayaking", "Cycling", "Photography", "Food & Wine"]
+    },
+    {
+      "vocabulary": "specialties",
+      "label": "Guide Specialties",
+      "terms": ["Mountaineering", "Natural History", "Cultural Heritage", "Marine Biology", "Photography", "Ornithology"]
+    },
+    {
+      "vocabulary": "regions",
+      "label": "Regions",
+      "terms": ["East Africa", "Southern Africa", "Southeast Asia", "Central America", "Patagonia", "Himalayas", "Scandinavia"]
+    }
+  ],
+  "content": [
+    {
+      "id": "stat-tours",
+      "type": "paragraph.stat_item",
+      "values": {
+        "number": "85+",
+        "label": "Unique Tours"
+      }
+    },
+    {
+      "id": "stat-countries",
+      "type": "paragraph.stat_item",
+      "values": {
+        "number": "32",
+        "label": "Countries"
+      }
+    },
+    {
+      "id": "stat-guests",
+      "type": "paragraph.stat_item",
+      "values": {
+        "number": "12,000+",
+        "label": "Happy Guests"
+      }
+    },
+    {
+      "id": "stat-guides",
+      "type": "paragraph.stat_item",
+      "values": {
+        "number": "40+",
+        "label": "Expert Guides"
+      }
+    },
+    {
+      "id": "homepage",
+      "type": "node.homepage",
+      "path": "/homepage",
+      "values": {
+        "title": "Trailmark Tours",
+        "hero_title": "Adventures Led by Experts",
+        "hero_subtitle": "Small-Group Tours, Big Experiences",
+        "hero_description": "<p>Join our passionate local guides for immersive small-group adventures across 32 countries. From East African safaris to Patagonian treks, every journey is crafted for authentic exploration.</p>",
+        "stats_items": [
+          "@stat-tours",
+          "@stat-countries",
+          "@stat-guests",
+          "@stat-guides"
+        ],
+        "featured_items_title": "Featured Tours",
+        "cta_title": "Find Your Next Adventure",
+        "cta_description": "<p>Our expert guides are ready to lead you on the adventure of a lifetime. Small groups, big experiences, and responsible travel at the heart of everything we do.</p>",
+        "cta_primary": "Browse All Tours",
+        "cta_secondary": "Meet Our Guides"
+      }
+    },
+    {
+      "id": "tour-serengeti",
+      "type": "node.tour",
+      "path": "/tours/serengeti-safari",
+      "values": {
+        "title": "Serengeti Wildlife Safari",
+        "body": "<p>Witness the greatest wildlife spectacle on Earth during this 7-day safari through Tanzania's Serengeti National Park and Ngorongoro Crater. Expert naturalist guides ensure you see the Big Five and learn about the complex ecosystems that support this incredible biodiversity.</p><h2>Day-by-Day Itinerary</h2><ul><li>Day 1: Arrive in Arusha, welcome dinner</li><li>Day 2: Drive to Tarangire National Park, afternoon game drive</li><li>Day 3-4: Serengeti National Park, full-day game drives</li><li>Day 5: Serengeti to Ngorongoro Conservation Area</li><li>Day 6: Ngorongoro Crater floor exploration</li><li>Day 7: Departure from Arusha</li></ul>",
+        "tour_type": ["Wildlife Safari"],
+        "duration": "7 Days",
+        "price": "$4,500",
+        "group_size": "Max 8 guests",
+        "difficulty": "Easy",
+        "highlights": ["Big Five game viewing", "Ngorongoro Crater descent", "Luxury tented camps", "Expert naturalist guide"],
+        "image": {
+          "uri": "https://images.unsplash.com/photo-1516426122078-c23e76319801?w=800&q=80",
+          "alt": "Elephants walking across the Serengeti plains at sunset",
+          "title": "Serengeti Safari"
+        },
+        "featured": true
+      }
+    },
+    {
+      "id": "tour-nepal-trek",
+      "type": "node.tour",
+      "path": "/tours/nepal-annapurna-circuit",
+      "values": {
+        "title": "Annapurna Circuit Trek",
+        "body": "<p>Trek one of the world's most iconic mountain circuits through diverse landscapes from subtropical forests to high-altitude desert. Cross the Thorong La Pass at 5,416 meters and experience the warmth of Nepali mountain hospitality at teahouses along the way.</p><h2>Trek Highlights</h2><ul><li>Days 1-4: Ascend through lush rhododendron forests and terraced rice paddies</li><li>Days 5-8: High-altitude villages and Tibetan Buddhist monasteries</li><li>Day 9: Cross Thorong La Pass (5,416m)</li><li>Days 10-12: Descend through Muktinath and Jomsom to Pokhara</li></ul>",
+        "tour_type": ["Hiking"],
+        "duration": "14 Days",
+        "price": "$2,200",
+        "group_size": "Max 12 guests",
+        "difficulty": "Challenging",
+        "highlights": ["Thorong La Pass crossing", "Himalayan panoramas", "Teahouse stays", "Tibetan monasteries"],
+        "image": {
+          "uri": "https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=800&q=80",
+          "alt": "Hikers on a mountain trail with Himalayan peaks in the background",
+          "title": "Annapurna Circuit"
+        },
+        "featured": true
+      }
+    },
+    {
+      "id": "tour-costa-rica",
+      "type": "node.tour",
+      "path": "/tours/costa-rica-rainforest-adventure",
+      "values": {
+        "title": "Costa Rica Rainforest Adventure",
+        "body": "<p>Explore the incredible biodiversity of Costa Rica on this action-packed 9-day adventure. From cloud forests to volcanic hot springs, and from howler monkeys to quetzals, this tour showcases the best of Central America's ecological wonderland.</p><h2>Itinerary</h2><ul><li>Days 1-2: San Jose to Arenal Volcano, hot springs and hanging bridges</li><li>Days 3-4: Monteverde Cloud Forest, canopy zip-line tour</li><li>Days 5-6: Manuel Antonio National Park, snorkeling and beach</li><li>Days 7-8: Tortuguero canals by boat, sea turtle nesting</li><li>Day 9: Return to San Jose and departure</li></ul>",
+        "tour_type": ["Wildlife Safari"],
+        "duration": "9 Days",
+        "price": "$2,800",
+        "group_size": "Max 10 guests",
+        "difficulty": "Moderate",
+        "highlights": ["Cloud forest zip-lining", "Volcanic hot springs", "Sea turtle nesting", "Incredible biodiversity"],
+        "image": {
+          "uri": "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=800&q=80",
+          "alt": "Lush green rainforest canopy in Costa Rica",
+          "title": "Costa Rica Rainforest"
+        },
+        "featured": true
+      }
+    },
+    {
+      "id": "tour-iceland-photography",
+      "type": "node.tour",
+      "path": "/tours/iceland-northern-lights-photography",
+      "values": {
+        "title": "Iceland Northern Lights Photography Tour",
+        "body": "<p>Chase the aurora borealis across Iceland's dramatic landscapes on this 6-day photography-focused tour. Our expert photography guide will help you capture stunning images of the Northern Lights, glaciers, waterfalls, and volcanic terrain.</p><h2>Tour Highlights</h2><ul><li>Day 1: Reykjavik orientation, camera setup workshop</li><li>Day 2: Golden Circle - Thingvellir, Geysir, Gullfoss</li><li>Day 3: South Coast waterfalls and black sand beaches</li><li>Day 4: Jokulsarlon Glacier Lagoon and Diamond Beach</li><li>Day 5: Snaefellsnes Peninsula landscapes</li><li>Day 6: Final Northern Lights chase and departure</li></ul>",
+        "tour_type": ["Photography"],
+        "duration": "6 Days",
+        "price": "$3,100",
+        "group_size": "Max 8 guests",
+        "difficulty": "Easy",
+        "highlights": ["Northern Lights photography", "Glacier lagoon", "Expert photo guide", "Black sand beaches"],
+        "image": {
+          "uri": "https://images.unsplash.com/photo-1531366936337-7c912a4589a7?w=800&q=80",
+          "alt": "Northern Lights dancing over an Icelandic landscape",
+          "title": "Iceland Northern Lights"
+        },
+        "featured": false
+      }
+    },
+    {
+      "id": "guide-amani",
+      "type": "node.guide",
+      "path": "/guides/amani-kwame",
+      "values": {
+        "title": "Amani Kwame",
+        "body": "<p>Born and raised near the Serengeti, Amani has been guiding wildlife safaris for over 15 years. His deep knowledge of animal behavior and ecosystems makes every safari an unforgettable learning experience. Amani is particularly passionate about big cat conservation and has contributed to several research projects with the Serengeti Lion Project.</p><h2>What Guests Say</h2><p>\"Amani spotted animals that no one else could see. His knowledge of the Serengeti is encyclopedic, and his passion for wildlife is contagious.\" - Previous guest</p>",
+        "specialty": ["Natural History"],
+        "languages": ["English", "Swahili", "French"],
+        "years_experience": "15",
+        "certification": ["TANAPA Certified Guide", "Wilderness First Responder", "Wildlife Conservation Certificate"],
+        "image": {
+          "uri": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=800&q=80",
+          "alt": "Amani Kwame, expert safari guide",
+          "title": "Amani Kwame"
+        }
+      }
+    },
+    {
+      "id": "guide-maya",
+      "type": "node.guide",
+      "path": "/guides/maya-sherpa",
+      "values": {
+        "title": "Maya Sherpa",
+        "body": "<p>Maya is one of Nepal's most experienced female mountain guides. She has summited multiple Himalayan peaks and led hundreds of trekking groups through the Annapurna and Everest regions. Maya is a strong advocate for women in mountaineering and mentors young female guides through a program she founded in Pokhara.</p><h2>What Guests Say</h2><p>\"Maya's leadership on the Annapurna Circuit was outstanding. She kept the group motivated, safe, and laughing even at 5,000 meters.\" - Previous guest</p>",
+        "specialty": ["Mountaineering"],
+        "languages": ["English", "Nepali", "Hindi"],
+        "years_experience": "12",
+        "certification": ["Nepal Mountaineering Association Guide", "Advanced Wilderness First Aid", "Leave No Trace Master Educator"],
+        "image": {
+          "uri": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=800&q=80",
+          "alt": "Maya Sherpa, expert mountain guide",
+          "title": "Maya Sherpa"
+        }
+      }
+    },
+    {
+      "id": "guide-carlos",
+      "type": "node.guide",
+      "path": "/guides/carlos-mendez",
+      "values": {
+        "title": "Carlos Mendez",
+        "body": "<p>Carlos is a marine biologist turned tour guide who leads our Costa Rica and Central America adventures. His scientific background gives guests unique insights into tropical ecosystems, from cloud forests to coral reefs. When not guiding, Carlos works with local conservation groups to protect sea turtle nesting sites.</p><h2>What Guests Say</h2><p>\"Carlos's knowledge of tropical ecology is incredible. He turned every hike into a fascinating nature lesson that made us see the rainforest in a completely new way.\" - Previous guest</p>",
+        "specialty": ["Marine Biology"],
+        "languages": ["English", "Spanish", "Portuguese"],
+        "years_experience": "10",
+        "certification": ["Marine Biology MSc", "PADI Divemaster", "Certified Naturalist Guide"],
+        "image": {
+          "uri": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=800&q=80",
+          "alt": "Carlos Mendez, expert naturalist guide",
+          "title": "Carlos Mendez"
+        }
+      }
+    },
+    {
+      "id": "destination-tanzania",
+      "type": "node.destination",
+      "path": "/destinations/tanzania",
+      "values": {
+        "title": "Tanzania",
+        "body": "<p>Tanzania is one of the world's premier safari destinations, home to the Serengeti, Ngorongoro Crater, Mount Kilimanjaro, and the spice island of Zanzibar. The country's commitment to conservation means over 30% of its land is protected, making it a haven for wildlife.</p><h2>Why Visit Tanzania</h2><ul><li>Witness the Great Wildebeest Migration</li><li>See the Big Five in their natural habitat</li><li>Climb Africa's highest peak, Mount Kilimanjaro</li><li>Relax on the pristine beaches of Zanzibar</li><li>Experience Maasai culture and traditions</li></ul>",
+        "region": ["East Africa"],
+        "country": "Tanzania",
+        "best_season": "June to October (dry season) for safaris",
+        "image": {
+          "uri": "https://images.unsplash.com/photo-1516426122078-c23e76319801?w=800&q=80",
+          "alt": "Elephants on the African savanna with Kilimanjaro in the background",
+          "title": "Tanzania"
+        }
+      }
+    },
+    {
+      "id": "destination-nepal",
+      "type": "node.destination",
+      "path": "/destinations/nepal",
+      "values": {
+        "title": "Nepal",
+        "body": "<p>Nepal is the ultimate destination for trekkers and mountain lovers. Nestled between India and China, this small Himalayan nation is home to eight of the world's fourteen 8,000-meter peaks, including Mount Everest. Beyond the mountains, Nepal offers rich cultural heritage, ancient temples, and some of the warmest hospitality in Asia.</p><h2>Why Visit Nepal</h2><ul><li>Trek legendary routes like the Annapurna Circuit and Everest Base Camp</li><li>Explore UNESCO World Heritage Sites in Kathmandu Valley</li><li>Experience traditional Nepali and Tibetan culture</li><li>Spot rare wildlife in Chitwan National Park</li></ul>",
+        "region": ["Himalayas"],
+        "country": "Nepal",
+        "best_season": "October to November, March to May",
+        "image": {
+          "uri": "https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=800&q=80",
+          "alt": "Himalayan mountain peaks above the clouds",
+          "title": "Nepal"
+        }
+      }
+    },
+    {
+      "id": "destination-costa-rica",
+      "type": "node.destination",
+      "path": "/destinations/costa-rica",
+      "values": {
+        "title": "Costa Rica",
+        "body": "<p>Costa Rica packs an incredible amount of biodiversity into a small area. With over 5% of the world's species found within its borders, it is a nature lover's paradise. The country is also a global leader in ecotourism and renewable energy, making it an ideal destination for responsible travelers.</p><h2>Why Visit Costa Rica</h2><ul><li>Explore diverse ecosystems from cloud forests to coral reefs</li><li>Spot monkeys, sloths, toucans, and sea turtles</li><li>Adventure activities including zip-lining, rafting, and surfing</li><li>Relaxing volcanic hot springs</li><li>Sustainable tourism practices throughout the country</li></ul>",
+        "region": ["Central America"],
+        "country": "Costa Rica",
+        "best_season": "December to April (dry season)",
+        "image": {
+          "uri": "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=800&q=80",
+          "alt": "Lush tropical rainforest and waterfall in Costa Rica",
+          "title": "Costa Rica"
+        }
+      }
+    },
+    {
+      "id": "review-david",
+      "type": "node.review",
+      "path": "/reviews/david-serengeti-review",
+      "values": {
+        "title": "Best Safari Experience of Our Lives",
+        "body": "<p>My wife and I joined the Serengeti Wildlife Safari with guide Amani, and it exceeded every expectation. On our first game drive, we saw a lioness with three cubs from just 20 meters away. Amani's knowledge of the animals and the ecosystem was extraordinary. The tented camps were luxurious and the staff treated us like family. We have already recommended Trailmark to all our friends.</p>",
+        "reviewer_name": "David Peterson",
+        "tour_name": "Serengeti Wildlife Safari",
+        "rating": "5",
+        "travel_date": "August 2025",
+        "image": {
+          "uri": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=800&q=80",
+          "alt": "David Peterson, safari guest",
+          "title": "David Peterson"
+        }
+      }
+    },
+    {
+      "id": "review-sophie",
+      "type": "node.review",
+      "path": "/reviews/sophie-nepal-review",
+      "values": {
+        "title": "Annapurna Trek Changed My Life",
+        "body": "<p>The Annapurna Circuit Trek with Maya was truly life-changing. Crossing Thorong La Pass was the hardest and most rewarding thing I have ever done. Maya was an incredible leader, always checking on us, adjusting the pace, and sharing stories about her homeland. The views of the Himalayas at sunrise were something I will carry with me forever.</p>",
+        "reviewer_name": "Sophie Laurent",
+        "tour_name": "Annapurna Circuit Trek",
+        "rating": "5",
+        "travel_date": "October 2024",
+        "image": {
+          "uri": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=800&q=80",
+          "alt": "Sophie Laurent, trekking guest",
+          "title": "Sophie Laurent"
+        }
+      }
+    },
+    {
+      "id": "review-mike",
+      "type": "node.review",
+      "path": "/reviews/mike-costa-rica-review",
+      "values": {
+        "title": "Costa Rica Was Absolutely Incredible",
+        "body": "<p>Carlos brought the Costa Rican rainforest to life in ways I never expected. His ability to spot wildlife was astounding, from tiny poison dart frogs to a family of howler monkeys high in the canopy. The zip-lining through the cloud forest was a rush, and the sea turtle nesting experience at Tortuguero was deeply moving. An outstanding tour from start to finish.</p>",
+        "reviewer_name": "Mike Harrison",
+        "tour_name": "Costa Rica Rainforest Adventure",
+        "rating": "5",
+        "travel_date": "March 2025",
+        "image": {
+          "uri": "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=800&q=80",
+          "alt": "Mike Harrison, adventure guest",
+          "title": "Mike Harrison"
+        }
+      }
+    },
+    {
+      "id": "about-page",
+      "type": "node.page",
+      "path": "/about",
+      "values": {
+        "title": "About Trailmark Tours",
+        "body": "<p>Trailmark Tours was founded in 2010 by a group of passionate travelers and experienced guides who believed that small-group, expert-led adventures could change the way people see the world. Today, we operate tours across 32 countries on six continents.</p><h2>Our Philosophy</h2><p>We believe the best travel experiences happen in small groups led by knowledgeable local guides. Our tours are limited to 8-12 guests, ensuring personalized attention and authentic cultural interactions.</p><h2>Responsible Travel</h2><p>Sustainability is at the core of everything we do. We partner with locally owned accommodations, employ local guides, and contribute a percentage of every booking to conservation and community development projects in the regions we operate.</p>"
+      }
+    },
+    {
+      "id": "faq-page",
+      "type": "node.page",
+      "path": "/faq",
+      "values": {
+        "title": "Frequently Asked Questions",
+        "body": "<p>Find answers to common questions about booking with Trailmark Tours.</p><h2>What is the average group size?</h2><p>Our tours typically have 6-10 guests, with a maximum of 12. This ensures a personal experience with plenty of one-on-one time with your guide.</p><h2>What is your cancellation policy?</h2><p>Full refund if cancelled 60+ days before departure, 50% refund if cancelled 30-59 days before departure. No refund for cancellations less than 30 days before departure. We strongly recommend travel insurance.</p><h2>What fitness level is required?</h2><p>Each tour lists a difficulty level: Easy, Moderate, or Challenging. Easy tours require no special fitness. Moderate tours involve daily walks of 3-5 hours. Challenging tours like the Annapurna Circuit require regular hiking experience and good physical fitness.</p><h2>Are solo travelers welcome?</h2><p>Absolutely! Many of our guests travel solo. We can pair you with a roommate to avoid single supplements, or you can book a private room for an additional fee.</p>"
+      }
+    }
+  ]
+}

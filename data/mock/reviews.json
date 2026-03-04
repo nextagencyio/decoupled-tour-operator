@@ -1,0 +1,129 @@
+{
+  "data": {
+    "nodeReviews": {
+      "__typename": "NodeReviewConnection",
+      "nodes": [
+        {
+          "__typename": "NodeReview",
+          "id": "review-david",
+          "title": "Best Safari Experience of Our Lives",
+          "path": "/reviews/david-serengeti-review",
+          "body": {
+            "processed": "<p>My wife and I joined the Serengeti Wildlife Safari with guide Amani, and it exceeded every expectation. On our first game drive, we saw a lioness with three cubs from just 20 meters away. Amani's knowledge of the animals and the ecosystem was extraordinary. The tented camps were luxurious and the staff treated us like family. We have already recommended Trailmark to all our friends.</p>",
+            "summary": "My wife and I joined the Serengeti Wildlife Safari with guide Amani, and it exceeded every expectation. On our first game drive, we saw a lioness with three cubs from just 20 meters away. Amani's know"
+          },
+          "reviewerName": "David Peterson",
+          "tourName": "Serengeti Wildlife Safari",
+          "rating": "5",
+          "travelDate": "August 2025",
+          "image": {
+            "url": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=800&q=80",
+            "alt": "David Peterson, safari guest",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        },
+        {
+          "__typename": "NodeReview",
+          "id": "review-sophie",
+          "title": "Annapurna Trek Changed My Life",
+          "path": "/reviews/sophie-nepal-review",
+          "body": {
+            "processed": "<p>The Annapurna Circuit Trek with Maya was truly life-changing. Crossing Thorong La Pass was the hardest and most rewarding thing I have ever done. Maya was an incredible leader, always checking on us, adjusting the pace, and sharing stories about her homeland. The views of the Himalayas at sunrise were something I will carry with me forever.</p>",
+            "summary": "The Annapurna Circuit Trek with Maya was truly life-changing. Crossing Thorong La Pass was the hardest and most rewarding thing I have ever done. Maya was an incredible leader, always checking on us, "
+          },
+          "reviewerName": "Sophie Laurent",
+          "tourName": "Annapurna Circuit Trek",
+          "rating": "5",
+          "travelDate": "October 2024",
+          "image": {
+            "url": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=800&q=80",
+            "alt": "Sophie Laurent, trekking guest",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        },
+        {
+          "__typename": "NodeReview",
+          "id": "review-mike",
+          "title": "Costa Rica Was Absolutely Incredible",
+          "path": "/reviews/mike-costa-rica-review",
+          "body": {
+            "processed": "<p>Carlos brought the Costa Rican rainforest to life in ways I never expected. His ability to spot wildlife was astounding, from tiny poison dart frogs to a family of howler monkeys high in the canopy. The zip-lining through the cloud forest was a rush, and the sea turtle nesting experience at Tortuguero was deeply moving. An outstanding tour from start to finish.</p>",
+            "summary": "Carlos brought the Costa Rican rainforest to life in ways I never expected. His ability to spot wildlife was astounding, from tiny poison dart frogs to a family of howler monkeys high in the canopy. T"
+          },
+          "reviewerName": "Mike Harrison",
+          "tourName": "Costa Rica Rainforest Adventure",
+          "rating": "5",
+          "travelDate": "March 2025",
+          "image": {
+            "url": "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=800&q=80",
+            "alt": "Mike Harrison, adventure guest",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}
