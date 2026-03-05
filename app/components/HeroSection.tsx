@@ -22,8 +22,8 @@ export default function HeroSection({ homepageContent }: HeroSectionProps) {
         <h1 className="font-display text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold text-white mb-6 leading-tight">{title}</h1>
         {subtitle && <p className="text-xl md:text-2xl text-gray-200 mb-8 max-w-3xl mx-auto font-light">{subtitle}</p>}
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Link href="/services" className="inline-flex items-center justify-center px-8 py-4 bg-gradient-to-r from-primary-700 to-primary-800 text-white rounded-full hover:from-primary-600 hover:to-primary-700 transition-all duration-300 font-bold text-lg tracking-wide shadow-lg">Explore Services</Link>
-          <Link href="/contact" className="inline-flex items-center justify-center px-8 py-4 border-2 border-white/80 text-white rounded-full hover:bg-white/10 transition-all duration-300 font-bold text-lg tracking-wide">Contact Us</Link>
+          <Link href="/tours" className="inline-flex items-center justify-center px-8 py-4 bg-gradient-to-r from-primary-700 to-primary-800 text-white rounded-full hover:from-primary-600 hover:to-primary-700 transition-all duration-300 font-bold text-lg tracking-wide shadow-lg">Explore Services</Link>
+          <Link href="/tours" className="inline-flex items-center justify-center px-8 py-4 border-2 border-white/80 text-white rounded-full hover:bg-white/10 transition-all duration-300 font-bold text-lg tracking-wide">Contact Us</Link>
         </div>
       </div>
 
