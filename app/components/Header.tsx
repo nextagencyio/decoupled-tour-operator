@@ -8,8 +8,7 @@ import { Menu, X, Compass } from 'lucide-react'
 
 const navigationItems = [
   { name: 'Home', href: '/' },
-  { name: 'Services', href: '/tours' },
-  { name: 'Events', href: '/tours' },
+  { name: 'Tours', href: '/tours' },
   { name: 'About', href: '/about' },
 ]
 
@@ -42,7 +41,7 @@ export default function Header() {
             <div className="flex-shrink-0 w-10 h-10 bg-primary-900 rounded-xl flex items-center justify-center shadow-sm">
               <Compass className="w-5 h-5 text-accent-400" />
             </div>
-            <span className="font-display text-xl font-bold text-primary-900 hidden sm:block tracking-tight">Frontier Office</span>
+            <span className="font-display text-xl font-bold text-primary-900 hidden sm:block tracking-tight">Frontier Journeys</span>
           </Link>
 
           <nav className="hidden lg:flex items-center space-x-1">
