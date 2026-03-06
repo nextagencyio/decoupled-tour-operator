@@ -19,28 +19,28 @@
               "__typename": "ParagraphStatItem",
               "id": "stat-tours",
               "title": "",
-              "number": "85+",
+              "number": "85+", "value": "85+",
               "label": "Unique Tours"
             },
             {
               "__typename": "ParagraphStatItem",
               "id": "stat-countries",
               "title": "",
-              "number": "32",
+              "number": "32", "value": "32",
               "label": "Countries"
             },
             {
               "__typename": "ParagraphStatItem",
               "id": "stat-guests",
               "title": "",
-              "number": "12,000+",
+              "number": "12,000+", "value": "12,000+",
               "label": "Happy Guests"
             },
             {
               "__typename": "ParagraphStatItem",
               "id": "stat-guides",
               "title": "",
-              "number": "40+",
+              "number": "40+", "value": "40+",
               "label": "Expert Guides"
             }
           ],
