@@ -1,14 +1,18 @@
+export interface TermRef {
+  name: string
+}
+
 export interface DrupalHomepage {
   id: string
   title: string
   path?: string
   heroTitle?: string
   heroSubtitle?: string
-  heroDescription?: { processed: string; summary?: string }
-  statsItems?: string
+  heroDescription?: { processed: string }
+  statsItems?: { id: string; number: string; label: string }[]
   featuredItemsTitle?: string
   ctaTitle?: string
-  ctaDescription?: { processed: string; summary?: string }
+  ctaDescription?: { processed: string }
   ctaPrimary?: string
   ctaSecondary?: string
 }
@@ -17,53 +21,57 @@ export interface DrupalPage {
   id: string
   title: string
   path?: string
-
+  body?: { processed: string }
 }
 
 export interface DrupalTour {
   id: string
   title: string
   path?: string
-  tourType?: string
+  body?: { processed: string }
+  tourType?: TermRef[]
   duration?: string
   price?: string
   groupSize?: string
   difficulty?: string
-  highlights?: string
-  image?: { url: string; alt: string; width?: number; height?: number; variations?: { name: string; url: string; width: number; height: number }[] }
-  featured?: string
+  highlights?: string[]
+  image?: DrupalImage
+  featured?: boolean
 }
 
 export interface DrupalGuide {
   id: string
   title: string
   path?: string
-  specialty?: string
-  languages?: string
+  body?: { processed: string }
+  specialty?: TermRef[]
+  languages?: string[]
   yearsExperience?: string
-  certification?: string
-  image?: { url: string; alt: string; width?: number; height?: number; variations?: { name: string; url: string; width: number; height: number }[] }
+  certification?: string[]
+  image?: DrupalImage
 }
 
 export interface DrupalDestination {
   id: string
   title: string
   path?: string
-  region?: string
+  body?: { processed: string }
+  region?: TermRef[]
   country?: string
   bestSeason?: string
-  image?: { url: string; alt: string; width?: number; height?: number; variations?: { name: string; url: string; width: number; height: number }[] }
+  image?: DrupalImage
 }
 
 export interface DrupalReview {
   id: string
   title: string
   path?: string
+  body?: { processed: string }
   reviewerName?: string
   tourName?: string
   rating?: string
   travelDate?: string
-  image?: { url: string; alt: string; width?: number; height?: number; variations?: { name: string; url: string; width: number; height: number }[] }
+  image?: DrupalImage
 }
 
 export interface ToursData {

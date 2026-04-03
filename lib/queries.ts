@@ -7,15 +7,21 @@ export const GET_HOMEPAGE_DATA = gql`
       nodes {
         id
         title
-      heroTitle
-      heroSubtitle
-      heroDescription { processed summary }
-      statsItems
-      featuredItemsTitle
-      ctaTitle
-      ctaDescription { processed summary }
-      ctaPrimary
-      ctaSecondary
+        heroTitle
+        heroSubtitle
+        heroDescription { processed }
+        statsItems {
+          ... on ParagraphStatItem {
+            id
+            number
+            label
+          }
+        }
+        featuredItemsTitle
+        ctaTitle
+        ctaDescription { processed }
+        ctaPrimary
+        ctaSecondary
       }
     }
   }
@@ -29,16 +35,16 @@ export const GET_TOURS = gql`
         title
         path
         created { timestamp }
-        ... on NodeTour {
-          tourType
-          duration
-          price
-          groupSize
-          difficulty
-          highlights
-          image { url alt width height variations(styles: [LARGE, MEDIUM, THUMBNAIL]) { name url width height } }
-          featured
+        tourType {
+          ... on TermTourType { name }
         }
+        duration
+        price
+        groupSize
+        difficulty
+        highlights
+        image { url alt width height variations(styles: [LARGE, MEDIUM, THUMBNAIL]) { name url width height } }
+        featured
       }
     }
   }
@@ -53,14 +59,17 @@ export const GET_TOUR_BY_PATH = gql`
             id
             title
             path
-          tourType
-          duration
-          price
-          groupSize
-          difficulty
-          highlights
-          image { url alt width height variations(styles: [LARGE, MEDIUM, THUMBNAIL]) { name url width height } }
-          featured
+            body { processed }
+            tourType {
+              ... on TermTourType { name }
+            }
+            duration
+            price
+            groupSize
+            difficulty
+            highlights
+            image { url alt width height variations(styles: [LARGE, MEDIUM, THUMBNAIL]) { name url width height } }
+            featured
           }
         }
       }
@@ -76,13 +85,13 @@ export const GET_GUIDES = gql`
         title
         path
         created { timestamp }
-        ... on NodeGuide {
-          specialty
-          languages
-          yearsExperience
-          certification
-          image { url alt width height variations(styles: [LARGE, MEDIUM, THUMBNAIL]) { name url width height } }
+        specialty {
+          ... on TermSpecialty { name }
         }
+        languages
+        yearsExperience
+        certification
+        image { url alt width height variations(styles: [LARGE, MEDIUM, THUMBNAIL]) { name url width height } }
       }
     }
   }
@@ -97,11 +106,14 @@ export const GET_GUIDE_BY_PATH = gql`
             id
             title
             path
-          specialty
-          languages
-          yearsExperience
-          certification
-          image { url alt width height variations(styles: [LARGE, MEDIUM, THUMBNAIL]) { name url width height } }
+            body { processed }
+            specialty {
+              ... on TermSpecialty { name }
+            }
+            languages
+            yearsExperience
+            certification
+            image { url alt width height variations(styles: [LARGE, MEDIUM, THUMBNAIL]) { name url width height } }
           }
         }
       }
@@ -117,12 +129,12 @@ export const GET_DESTINATIONS = gql`
         title
         path
         created { timestamp }
-        ... on NodeDestination {
-          region
-          country
-          bestSeason
-          image { url alt width height variations(styles: [LARGE, MEDIUM, THUMBNAIL]) { name url width height } }
+        region {
+          ... on TermRegion { name }
         }
+        country
+        bestSeason
+        image { url alt width height variations(styles: [LARGE, MEDIUM, THUMBNAIL]) { name url width height } }
       }
     }
   }
@@ -137,10 +149,13 @@ export const GET_DESTINATION_BY_PATH = gql`
             id
             title
             path
-          region
-          country
-          bestSeason
-          image { url alt width height variations(styles: [LARGE, MEDIUM, THUMBNAIL]) { name url width height } }
+            body { processed }
+            region {
+              ... on TermRegion { name }
+            }
+            country
+            bestSeason
+            image { url alt width height variations(styles: [LARGE, MEDIUM, THUMBNAIL]) { name url width height } }
           }
         }
       }
@@ -156,13 +171,11 @@ export const GET_REVIEWS = gql`
         title
         path
         created { timestamp }
-        ... on NodeReview {
-          reviewerName
-          tourName
-          rating
-          travelDate
-          image { url alt width height variations(styles: [LARGE, MEDIUM, THUMBNAIL]) { name url width height } }
-        }
+        reviewerName
+        tourName
+        rating
+        travelDate
+        image { url alt width height variations(styles: [LARGE, MEDIUM, THUMBNAIL]) { name url width height } }
       }
     }
   }
@@ -177,11 +190,12 @@ export const GET_REVIEW_BY_PATH = gql`
             id
             title
             path
-          reviewerName
-          tourName
-          rating
-          travelDate
-          image { url alt width height variations(styles: [LARGE, MEDIUM, THUMBNAIL]) { name url width height } }
+            body { processed }
+            reviewerName
+            tourName
+            rating
+            travelDate
+            image { url alt width height variations(styles: [LARGE, MEDIUM, THUMBNAIL]) { name url width height } }
           }
         }
       }
